@@ -9,36 +9,59 @@ function randomNumber () { //create a function that creates a random number
   rndNumber = randomTotal();
   console.log(rndNumber);
 
+     
+
   $(document).ready(function() {  
-        
-    $("#earth").on("click", function () { //for homework we could call the function
+
+    var userScore = 0;
+    var wins = 0;
+    var losses = 0;
     
-    var earth = randomNumber(); // in the click function with the 
-    //appropriate id.
+    $("#rndNum").text(rndNumber);
+    $("#score").text(userScore);
+
+    var earth = randomNumber(); 
     console.log(earth);
 
-    //$("#random-number").text(random);
+    var fire = randomNumber(); 
+    console.log(fire);
+
+    var water = randomNumber(); 
+    console.log(water);
+
+    var wind = randomNumber(); 
+    console.log(wind);
+
+    
+
+        
+    $("#earth").on("click", function () { 
+        userScore = userScore + earth;
+        console.log(earth);
+        console.log(userScore);
+        $("#score").text(userScore);
+            
     });
 
     $("#fire").on("click", function () { //for homework we could call the function
-    
-        var fire = randomNumber(); // in the click function with the 
-        //appropriate id.
+        userScore = userScore + fire;
         console.log(fire);
+        console.log(userScore);
+        $("#score").text(userScore);
     });
 
     $("#water").on("click", function () { //for homework we could call the function
-    
-        var water = randomNumber(); // in the click function with the 
-        //appropriate id.
+        userScore = userScore + water;
         console.log(water);
+        console.log(userScore);
+        $("#score").text(userScore);
     });
 
     $("#wind").on("click", function () { //for homework we could call the function
-    
-        var wind = randomNumber(); // in the click function with the 
-        //appropriate id.
+        userScore = userScore + wind;
         console.log(wind);
+        console.log(userScore);
+        $("#score").text(userScore);
     });
 
 

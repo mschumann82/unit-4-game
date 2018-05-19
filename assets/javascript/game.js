@@ -9,6 +9,18 @@ function randomNumber () { //create a function that creates a random number
   rndNumber = randomTotal();
   console.log(rndNumber);
 
+  var earth = randomNumber(); 
+    console.log(earth);
+
+    var fire = randomNumber(); 
+    console.log(fire);
+
+    var water = randomNumber(); 
+    console.log(water);
+
+    var wind = randomNumber(); 
+    console.log(wind);
+
      
 
   $(document).ready(function() {  
@@ -22,45 +34,37 @@ function randomNumber () { //create a function that creates a random number
     $("#losses").text(losses);
     $("#wins").text(wins);
 
-    var earth = randomNumber(); 
-    console.log(earth);
-
-    var fire = randomNumber(); 
-    console.log(fire);
-
-    var water = randomNumber(); 
-    console.log(water);
-
-    var wind = randomNumber(); 
-    console.log(wind);
+    
 
     function reset() {
-        randomNumber();
-        randomTotal();
+        rndNumber = randomTotal();
         userScore = 0;
-        var earth = randomNumber(); 
+        $("#rndNum").text(rndNumber);
+        $("#score").text(userScore);
+        earth = randomNumber(); 
         console.log(earth);
 
-        var fire = randomNumber(); 
+        fire = randomNumber(); 
         console.log(fire);
 
-        var water = randomNumber(); 
+        water = randomNumber(); 
         console.log(water);
 
-        var wind = randomNumber(); 
+        wind = randomNumber(); 
         console.log(wind);
+        
 
 
     }
 
-    function wins() {
+    function winner() {
         wins++; 
         $("#wins").text(wins);
         reset();
     }
 
-    function losses() {
-        wins++; 
+    function loser() {
+        losses++; 
         $("#losses").text(losses);
         reset();
     }
@@ -74,11 +78,11 @@ function randomNumber () { //create a function that creates a random number
         console.log(userScore);
         $("#score").text(userScore);
         if (userScore === rndNumber) {
-            wins();
+            winner();
             
         }
         if (userScore > rndNumber) {
-            losses();
+            loser();
             
         }
             
@@ -90,11 +94,11 @@ function randomNumber () { //create a function that creates a random number
         console.log(userScore);
         $("#score").text(userScore);
         if (userScore === rndNumber) {
-            wins();
+            winner();
             
         }
         if (userScore > rndNumber) {
-            losses();
+            loser();
             
         }
     });
@@ -105,11 +109,11 @@ function randomNumber () { //create a function that creates a random number
         console.log(userScore);
         $("#score").text(userScore);
         if (userScore === rndNumber) {
-            wins();
+            winner();
             
         }
         if (userScore > rndNumber) {
-            losses();
+            loser();
             
         }
     });
@@ -120,11 +124,11 @@ function randomNumber () { //create a function that creates a random number
         console.log(userScore);
         $("#score").text(userScore);
         if (userScore === rndNumber) {
-            wins();
+            winner();
             
         }
         if (userScore > rndNumber) {
-            losses();
+            loser();
             
         }
     });

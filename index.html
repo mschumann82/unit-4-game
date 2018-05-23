@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crystals Game</title>
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-
   
   <!-- Bootstrap File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+  
+  <!-- My CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
   <!-- JQuery and Javascript-->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="assets/javascript/game.js"></script>
@@ -19,6 +20,8 @@
 </head>
 
 <body>
+    
+    
     <div class = "container">
         <div class = "row">
             <div class = "col">
@@ -27,7 +30,7 @@
         </div>
         
         <div class = "row">
-            <div class ="col">
+            <div class ="col-4">
                 <p id = "paragraph">You will be given a random number at the start of the game. <br>
                     There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. <br>
                     You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. <br>
@@ -38,11 +41,11 @@
             </div>
         </div>
         <div class = "row">
-            <div class = "col-6">
+            <div class = "col-3">
                 <div id = "rndNum">
                 </div>
             </div>
-            <div class = "col-6">
+            <div class = "col-3">
                 <p>Wins: <span id = "wins"></span></p>
                 <p>Losses: <span id = "losses"></span></p>
             </div>
@@ -67,6 +70,7 @@
             </div>
         </div>
     </div>
+    
             "
         
                 
@@ -74,7 +78,6 @@
 
 
 
-
-
+    <embed src="10-let-the-battles-begin.mp3" width="0" height="0">
 </body>
 </html>
